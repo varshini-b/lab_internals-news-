@@ -1,0 +1,41 @@
+<!DOCTYTPE html>
+<html>
+<body>
+        <ul>
+                <a href="#Home">Home</a>&nbsp
+                <a href="#Login">LogIn</a>&nbsp
+                <a href="#Signup">SignUp</a>
+                </ul>
+                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" id="loginForm" method="post">
+                        <label for="username">Username : </label>
+                        <input type="text" name="username" placeholder="username" id="username">
+                        <span class="errorMsg"> * <?php print $userErr ?></span>
+                        <br>
+                        <label for="password">Password : </label>
+                        <input type="password" name="password" placeholder="password" id="password" >
+                        <span class="errorMsg"> * <?php print $passErr ?></span>
+                        <br>
+                        <input type="submit" value="Submit" class="submit" name="submit">
+                        <input type="reset" value="Reset" class="reset">
+                    </form>
+    <style>
+        body{
+            background-image:url(research.jpg);
+            background-repeat:no-repeat;
+            background-size:cover;
+            text-align:center;
+            font-size:170%;
+        }
+        a{
+                    text-decoration:none;
+                    color:black;
+                
+                }
+                form{
+                    color:aliceblue;
+                }
+    </style>
+    
+    </body>
+    </html>
+    
